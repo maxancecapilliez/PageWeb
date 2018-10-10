@@ -1,0 +1,262 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/* NAVIGATION */
+
+
+nav {
+  height: 13%;
+  margin: 0 auto;
+  background: #fff;
+ 
+  width: 100%;
+ /* box-shadow: 0px 5px 5px #dedede;*/
+}
+nav ul li{
+  list-style: none;
+  font-size: 100%;
+  width: 100%;
+  
+}
+#logo{padding-top: 10px;}
+#langue{
+  display: inline-block;
+  text-align: left;
+}
+nav ul li {
+  display: inline-block;
+ 
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .3s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '';
+  margin: 0;
+  opacity: 0;
+}
+ /*  Couleur animation navbar  */
+nav.fill ul #iut a:hover {
+  color: #2119FF;
+  z-index: 1;
+
+}
+nav.fill ul #dut_info a:hover {
+  color: #3DFF8A ;
+  z-index: 1;
+}
+nav.fill ul #international a:hover {
+  color: #F58F0A;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+#langue{
+ width: 2vw;
+}
+
+#jumbotron_iut{
+ margin-top: 8%; 
+ height: 70%; 
+}
+#facade_iut{margin: 0 auto;
+ text-align: center; 
+}
+#titre_iut{
+ color: #212121;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+}
+#pavé{ 
+ color: #212121;
+ font-size: 14px;
+}
+#iutpart1{
+ margin-bottom: 3px;
+}
+#iutpart2{
+ border-style: solid;
+ border-color: transparent transparent transparent #2119FF;
+ border-width: 1px;
+}
+#contact_plan{
+ text-align: center;
+ margin: auto;
+ margin-top: 20%;
+ margin-bottom: 20%;
+ 
+}
+#button_iut{
+ background-color: #2119FF;
+ margin-bottom: 2%;
+ margin-left: 10%;
+ text-decoration: none;
+}
+
+#jumbotron_dutinfo{ 
+ margin-top: -40px;
+ height: 70%;
+}
+#titre_dutinfo{ color: #212121;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+}
+
+
+#dutinfo_mid{
+ border-style: solid;
+ border-color: transparent #3DFF8A transparent #3DFF8A;
+ border-width: 1px;
+
+}
+
+
+#button_dutinfo{
+ background-color: #3DFF8A;
+ color: #212121;
+ margin-left: 33%; 
+ margin-top: 3%; 
+ text-decoration: none;
+}
+
+
+#jumbotron_inter{
+ margin-top: -40px;
+ height: 70%;
+}
+
+
+#titre_inter{ 
+ color: #212121;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+}
+
+#stage{
+ border-style: solid;
+ border-color: transparent transparent transparent #F58F0A;
+ border-width: 1px;
+ }
+ 
+#theme{
+ border-style: solid;
+ border-color: #F58F0A transparent transparent transparent ;
+ border-width: 1px;
+ margin-top: 12px;
+}
+
+#titre_theme{ 
+ color: #212121;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+}
+
+#pays{
+ color: #F58F0A;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+}
+
+#grece{
+ width: 95%;
+}
+
+#ireland{
+ margin-top: 8%;
+}
+
+#japon{
+ margin-left: 3%;
+}
+
+#sous-image{
+ text-align: center;
+ font-size: 10px;
+ color: #9E9E9E;
+}
+
+#question{
+ font-size: 20px;
+ color: #F58F0A;
+}
+
+#semestre{
+ margin: 20%;
+}
+
+#logo_footer{
+ margin-bottom: 5%;
+}
+
+
+
+footer{
+ width: 95%;
+ margin-bottom: 2%;
+ background-color: #fff;
+}
+
+#footer_ul{
+ margin-left: 5%;
+ 
+}
+#footer_li{
+ color: #212121;
+ font-size: 14px;
+}
+#footer_li:hover{
+ color: #F44336;
+}
+#footer-link{
+ text-decoration: none;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
